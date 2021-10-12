@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+    <defs>
+        <style>
+            .cls-1{fill:#eda2a2}
+        </style>
+    </defs>
+    <g id="Group_57" data-name="Group 57" transform="translate(-698.3 -168.5)">
+        <g id="Group_37" data-name="Group 37">
+            <g id="Group_34" data-name="Group 34">
+                <g id="Group_33" data-name="Group 33">
+                    <path id="Path_310" d="M713.3 173.4a5.015 5.015 0 0 0-5 5 5.081 5.081 0 0 0 5 5 5.015 5.015 0 0 0 5-5 5.081 5.081 0 0 0-5-5zm0 7.6a2.5 2.5 0 1 1 2.5-2.5 2.476 2.476 0 0 1-2.5 2.5z" class="cls-1" data-name="Path 310"/>
+                </g>
+            </g>
+            <g id="Group_36" data-name="Group 36">
+                <g id="Group_35" data-name="Group 35">
+                    <path id="Path_311" d="M719.9 183.4a1.267 1.267 0 0 0-1.8 0 6.941 6.941 0 0 1-9.8 0 1.273 1.273 0 1 0-1.8 1.8 9.241 9.241 0 0 0 5.6 2.7l-3.6 3.6a1.273 1.273 0 0 0 1.8 1.8l2.9-2.9 2.9 2.9a1.489 1.489 0 0 0 .9.4 1.222 1.222 0 0 0 .9-.4 1.268 1.268 0 0 0 0-1.8l-3.6-3.6a9.241 9.241 0 0 0 5.6-2.7 1.268 1.268 0 0 0 0-1.8z" class="cls-1" data-name="Path 311"/>
+                </g>
+            </g>
+        </g>
+        <g id="Group_38" data-name="Group 38">
+            <path id="Path_312" d="M698.3 168.5v30h30v-30zm28.1 28.2h-26.3v-26.3h26.3z" class="cls-1" data-name="Path 312"/>
+        </g>
+    </g>
+</svg>

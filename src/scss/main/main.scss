@@ -1,0 +1,123 @@
+* {
+    @include font();
+}
+
+.wrapper {
+    padding-top: 40px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.group {
+    &-container {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #888888;
+        margin: 5px 0;
+        border-radius: 5px 5px 0 0;
+    }
+
+    &-title {
+        background-color: #d2dee2;
+        display: flex;
+        border-radius: 5px 5px 0 0;
+        border-bottom: 1px solid #888888;
+        min-height: 25px;
+
+        &__icon {
+            margin-left: 5px;
+            img {
+                width: 25px;
+                height: 25px;
+                transition: transform 300ms ease;
+            }
+
+            img.hidden {
+                transform: rotate(180deg);
+                transition: transform 300ms ease;
+            }
+        }
+
+        &__title {
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 25px;
+            padding-left: 10px;
+        } 
+    }
+}
+
+.item {
+    &-container {
+        display: flex;
+        min-height: 25px;
+    }
+
+    &-title {
+        font-size: 10px;
+        font-weight: 400;
+        padding: 5px;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    &-price {
+        background-color: #f3f3f3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 14px;
+        width: 65px;
+    }
+
+    &-container:nth-child(odd) {
+        border-right: 1px solid #888888;
+    }
+}
+
+.items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.course {
+    margin-top: 20px;
+    &-title {
+        font-size: 14px;
+    }
+
+    > input {
+        height: 25px;
+        width: 80px;
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+}
+
+.catalog-wrapper {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.table {
+    margin-top: 40px;
+}
+
+.last-update {
+    margin: 20px 0;
+    font-size: 10px;        
+}
+
+.price {
+    &-down {
+        background-color: rgba(0, 128, 0, 0.4);
+    }
+
+    &-up {
+        background-color: rgba(247, 30, 30, 0.4);
+    }
+}

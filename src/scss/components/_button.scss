@@ -1,0 +1,22 @@
+.button {
+    height:56px;
+    background-color: $light-blue;
+    border-radius: 6px;
+    box-shadow: 0px 4px 8px 0px $button-shadow;
+    box-shadow: 0px 2px 4px 0px $button-shadow;
+
+    @include button_font();
+    color: $button-font-color;
+}
+
+.button:active {
+    box-shadow: 0px 4px 8px 0px $button-shadow;
+    box-shadow: 0px 2px 4px 0px $button-shadow-active;
+    border: 2px solid $button-border;
+}
+
+.button:disabled {
+    background: $light-grey;
+    box-shadow: 0px 4px 8px $button-disabled-shadow;
+    color: $button-font-color-disabled;
+}

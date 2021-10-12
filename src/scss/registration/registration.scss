@@ -1,0 +1,71 @@
+.registration {
+    margin: 0 30px;
+
+    &-form {
+        @include font();
+
+        &__title {
+
+            font-size: 34px;
+            font-weight: 700;
+            line-height: 44px;
+            letter-spacing: 0px;
+            text-align: left;
+            color: $grey;
+            margin: 40px auto auto 0;
+        }
+
+        &__hint {
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0px;
+            text-align: left;
+
+            line-height: 32px;
+            color: $grey;
+            display: inline-block;
+
+            &-link {
+                color: $light-blue;
+                display: inline-block;
+                margin-left: 5px;
+            }
+        }
+
+        &__inputs {
+            margin-top: 50px
+        }
+
+        &__input {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 33px;
+
+            &-label {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 29px;
+                letter-spacing: 0px;
+                text-align: left;
+                color: $brown;
+
+                > a {
+                    color: $light-blue;
+                }
+            }
+
+        }
+
+        &__signup {
+            display: flex;
+            margin-bottom: 38px;
+            
+        }
+
+        &__button {
+            margin-bottom: 40px;
+            width: 100%
+        }
+    }
+
+}
