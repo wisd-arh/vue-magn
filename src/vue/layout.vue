@@ -9,14 +9,17 @@
             .registration-form__input
                 label.registration-form__input-label Имя
                 input.input.registration-form__input-input(:placeholder="form.name.placeholder" v-model="form.name.value")
+                .registration-form__input-error(v-show="form.name.showError") {{ form.name.error }}
 
             .registration-form__input
                 label.registration-form__input-label Еmail
-                input.input.registration-form__input-input(type="email" placeholder="Введите ваш email")
+                input.input.registration-form__input-input(type="email" placeholder="Введите ваш email" v-model="form.email.value")
+                .registration-form__input-error(v-show="form.email.showError") {{ form.email.error }}
 
             .registration-form__input
                 label.registration-form__input-label Номер телефона
-                input.input.registration-form__input-input(type="tel" placeholder="Введите номер телефона")
+                input.input.registration-form__input-input(type="tel" placeholder="Введите номер телефона" v-model="form.phone.value")
+                .registration-form__input-error(v-show="form.phone.showError") {{ form.phone.error }}
 
             .registration-form__input
                 label.registration-form__input-label Язык
@@ -25,15 +28,22 @@
                     option(value="en") Английский
                     option(value="cn") Китайский
                     option(value="sp") Испанский
+                .registration-form__input-error(v-show="form.name.showError") {{ form.name.error }}
 
             .registration-form__signup
-                input.registration-form__input-input(type="checkbox")
-                label.registration-form__input-label Принимаю 
-                    a условия 
-                    | использования
+                .container
+                    input.registration-form__input-input(
+                        type="checkbox"
+                        v-model="form.signup.value"
+                    )
+                    label.registration-form__input-label Принимаю 
+                        a(href="#") условия 
+                        | использования
+                .registration-form__input-error(v-show="form.signup.showError") {{ form.signup.error }}
 
         button.button.registration-form__button(
             @click.prevent="checkForm"
+            :disabled="buttonDisabled"
         ) Зарегистрироваться
 </template>
 <script>
@@ -62,9 +72,22 @@ export default {
                     error: "Введено не корректное значение",
                     preg: "/A-Za-zА-Яа-яёЁ -/",
                     showError: false,
+                },
+                signup: {
+                    value: "",
+                    placeholder: "Введите Ваше имя",
+                    error: "Введено не корректное значение",
+                    preg: "/A-Za-zА-Яа-яёЁ -/",
+                    showError: false,
                 }
-
             }
+        }
+    },
+    computed: {
+        buttonDisabled() {
+            return Object.keys(this.form).reduce((acc, key) => {
+                return acc || (this.form[key].showError === true) || (!this.form[key].value)
+            }, false)
         }
     },
     methods: {

@@ -1,19 +1,15 @@
 {
   "icons": {
-    "js": "/js/icons.6a59c8f0.js"
+    "js": "/js/icons.0a853931.js"
   },
   "images": {
-    "js": "/js/images.15ebff3b.js"
+    "js": "/js/images.ca11bf90.js"
   },
   "index": {
     "js": [
-      "/js/0.03d1086a.chunk.js",
-      "/js/index.31b4a4c0.js"
+      "/js/3.f9356ac5.chunk.js",
+      "/js/index.e86f3de6.js"
     ],
-    "css": "/css/index.31b4a4c0.css"
-  },
-  "registration": {
-    "css": "/css/registration.c8efb0cc.css",
-    "js": "/js/registration.c8efb0cc.js"
+    "css": "/css/index.e86f3de6.css"
   }
 }

@@ -54,12 +54,23 @@
                 }
             }
 
+            &-error {
+                margin-top: 6px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                letter-spacing: 0px;
+                text-align: left;
+
+                color: $red;
+                
+            }
         }
 
         &__signup {
             display: flex;
             margin-bottom: 38px;
-            
+            flex-direction: column;
         }
 
         &__button {
